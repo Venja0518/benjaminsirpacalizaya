@@ -1,0 +1,59 @@
+import time
+correosValidos= ["benjamin.sirpa@ucb.edu.bo", "alen.sirpa@ucb.edu.bo", "claudia.sirpa@ucb.edu.bo"]
+usernamesValidos=["benjamin", "alen", "claudia"]
+contraseñaValida="b18a08s2005c."
+print("Elijir Inicio de Sesión:")
+print("1. Iniciar sesión")
+print("2. Iniciar sesión, usuario y contraseña")
+lecturaCorreo =int(input(""))
+if lecturaCorreo == 1:
+    print("Ingresar correo:")
+    correo=input()
+    password = 1
+    if username in usernamesValidos:
+        while password <= 3:
+            print("Ingresar contraseña:"
+            contraseña=input()
+            if contraseña == contraseñaValida:
+                print("Inicio de sesión Valido, BIENVENIDO.")
+                break
+            else:
+                print("")
+                print("Contraseña incorrecta, intente de nuevo.")
+                print("")
+                password += 1
+        if password > 3:
+            print("Has excedido el número de intentos. Intente de nuevo más tarde.")
+            lecturaCorreo=0
+    else:
+        print("")
+        print("Correo inválido, intenta de nuevo.")
+        print("")
+        time.sleep(1.2)
+        lecturaCorreo=1
+
+if lecturaCorreo == 2:
+    print("Ingrear Usuario:")
+    usuario=input()
+    if usuario in usuariosValidos:
+        password=1
+        while password <=3:
+            print("Ingrese su contraseña:")
+            contraseña=input()
+            if contraseña == contraseñaValida:
+                print("Inicio de sesión correcto, BIENVENIDO.")
+                break
+            else:
+                print("")
+                print("Contraseña incorrecta, intente de nuevo.")
+                print("")
+                password += 1
+        if password > 3:
+            print("Numeros de intentos excedido. Intente de nuevo más tarde.")
+            lecturaCorreo=0
+    else:
+        print("")
+        print("Usuario incorrecto, intentar nuevo.")
+        print("")
+        time.sleep(1.2)
+        lecturaCorreo=2
