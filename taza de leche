@@ -1,0 +1,18 @@
+def taza_de_Leche():
+    return ("Taza de leche")
+leche= int(input("Cuántas tazas de leche quieres?"))
+if leche==1:
+    azucar=input("Cuántas cucharadas de azucar quieres en tu taza de leche?")
+    print("Disfrute su taza de leche")
+elif leche==2:
+    azucar=input("Cuántas cucharadas de azucar quieres en tu taza de leche?")
+    print("Disfrute su taza de leche")
+elif leche==3:
+    azucar=input("Cuantas cucharadas de azucar quieres en tu taza de leche?")
+    print("Disfrute su taza de leche")
+else:
+    print("          Pasos para realizar una taza de leche exitosa         ")
+    print("1.-Insertar la leche en el la taza")
+    print("2.-Insertar agua caliente en la misma")
+    print("3.-Remover con un cuchara para tener un sabor refrescante")
+    print("4.-Disfrute su taza de leche")
